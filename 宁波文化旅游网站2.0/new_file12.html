@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+<link href="css/css.css" type=text/css rel=stylesheet>
+</head>
+<body>
+<div class="con">
+  <div class="head">
+    <div class="head_left">
+      <h1>书古今,港天下-宁波 </h1>
+    </div>
+    <div class="head_nav">
+      <ul>
+        <li><a href="#.html">设为主页</a></li>
+        <li><a href="#.html">加入收藏</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <!-----------------end head--------------------->
+  <ul class="uul">
+      <div class="dropdown">
+          <li><a href="index.html" class="dropbtn">首页</a></li>
+      </div>
+      <div class="dropdown">
+          <a href="new_file2.html" class="dropbtn">旅游名胜</a>
+          <div class="dropdown-content">
+              <a href="new_file3.html">自然景观</a>
+              <a href="new_file4.html">人文景观</a>
+              <a href="new_file5.html">特色小镇</a>
+			  <a href="new_file6.html">海滨景点</a>
+          </div>
+      </div>
+            <a href="new_file7.html" class="dropbtn">美景欣赏</a>
+            <a href="new_file8.html" class="dropbtn">饮食文化</a>
+            <a href="new_file9.html" class="dropbtn">人文历史</a>
+            <a href="new_file10.html" class="dropbtn">联系我们</a>
+            <a href="new_file11.html" class="dropbtn">视频介绍</a>
+            <a href="new_file12.html" class="dropbtn">登录</a>
+        </div>
+        </ul>
+         <!-----------------end nav--------------------->
+  <link href="css/lb.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script> 
+  <script type="text/javascript" src="js/lb.js"></script>
+        <div style="width:960px; height:320px; margin:10px auto;">
+            <div id="focus">
+                <ul>
+                    <li><a href="#" target="_blank"><img src="images/d1.jpg" width="960" /></a></li>
+                    <li><a href="#" target="_blank"><img src="images/d2.jpg" width="960" /></a></li>
+                    <li><a href="#" target="_blank"><img src="images/d3.jpg" width="960" /></a></li>
+                    <li><a href="#" target="_blank"><img src="images/d4.jpg" width="960" /></a></li>
+                    <li><a href="#" target="_blank"><img src="images/d5.jpg" width="960" /></a></li>
+                    <li><a href="#" target="_blank"><img src="images/d6.jpg" width="960" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main1 auto" style="margin: 0px auto;">
+            <div class="form-container">
+                <h2 align="center">欢迎来到宁波</h2>
+                <form action="#" id="loginForm">
+                    <div class="form-group">
+                        <label for="username">用户名：</label>
+                        <input type="text" id="username" name="username" placeholder="请输入用户名" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密码：</label>
+                        <input type="password" id="password" name="password" placeholder="请输入密码" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="登录">
+                    </div>
+                    <div class="error-message" id="errorMessage"></div>
+                </form>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="main">
+            <div class="clear"></div>
+        </div>
+        <div class="foot">
+            <p>Copyright  版权所有 宁波 </p>
+            <p> All Rights Reserved </p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script>
+        // 获取登录表单和错误信息显示元素
+        const loginForm = document.getElementById('loginForm');
+        const errorMessage = document.getElementById('errorMessage');
+
+        // 为表单添加提交事件监听器
+        loginForm.addEventListener('submit', function (e) {
+            // 阻止表单默认提交行为
+            e.preventDefault();
+
+            // 获取输入的用户名和密码
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // 验证用户名和密码
+            if (username === 'a' && password === '123') {
+                // 验证通过，跳转到指定页面（这里假设跳转到 index.html）
+                window.location.href = 'index.html';
+            } else {
+                // 验证失败，显示错误信息
+                errorMessage.textContent = '用户名或密码错误，请重试！';
+            }
+        });
+    </script>
+</body>
+
+</html>

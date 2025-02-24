@@ -1,0 +1,180 @@
+
+/*---------- 通配设置   -----------------*/
+* { margin:0; padding:0; font-family:微软雅黑;}
+BODY {	BACKGROUND: #ecf3fc; FONT: 12px/20px simsun;}
+IMG {	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none}
+ul,li{ list-style:none; list-style-type:none;} 
+A {	COLOR: #257ec0; TEXT-DECORATION: none}
+A:hover {	COLOR: #ff7202; TEXT-DECORATION: underline}
+.center{ text-align:center;}
+.fl{ float:left;}
+.fr{ float:right;}
+.lh22{ line-height:22px;}
+.p5{ padding:5px;}
+.pt3{ padding-top:3px;}
+.pt5{ padding-top:5px;}
+.pt10{ padding-top:10px;}
+.clear{ clear:both;}
+.m10{ margin:10px;}
+
+/*----------  大容器设置  -----------------*/
+.con{ width:960px; height:auto; padding:10px; margin:auto; background:#fff; }
+.head{ width:960px; height:100px; margin:auto;}
+.head_left{width:460px; height:100px; float:left;}
+.head_left h1{ font-size:50px; color:#000; line-height:75px;}
+.head_left p{ font-size:26px; color:#000; line-height:36px; font-family:Tahoma, Geneva, sans-serif}
+.head_nav{ width:200px; height:30px; float:right;}
+.head_nav li{ float:left; padding:5px 10px;}
+.head_nav li a{ font-size:12px; color:#666;}
+
+/*----------  导航设置   -----------------*/
+.nav{width:960px; height:36px; margin:auto; background:#000;}
+
+
+
+/*----------  轮播设置   -----------------*/
+.lunbo{ width:960px; height:380px; margin:5px auto;}
+/*---------- 主体样式设置-----------------*/
+.main{ width:960px; height:auto; margin:auto;}
+.jianjie{ width:960px; height:auto; min-height:220px; margin:auto;}
+.jianjie_top{ width:950px; height:30px; margin:auto; padding-left:10px; background:#900; color:#fff; font-size:16px; line-height:30px;}
+.jianjie_top a{ color:#fff; font-size:16px; line-height:30px;}
+.jianjie_des{ width:680px; height:auto; padding:20px; float:left; font-size:14px; text-indent:2em; color:#555; line-height:26px;}
+
+.jianjie_main{width:900px; height:auto; padding:10px; margin:auto; font-size:14px;color:#555; line-height:26px;}
+.jianjie_main p{font-size:14px; text-indent:2em; color:#555; line-height:26px;}
+
+
+.pic_show{ width:960px; height:240px; margin:auto;}
+.pic_show_top{ width:950px; height:30px; margin:auto; padding-left:10px; background:#900; color:#fff; font-size:16px; line-height:30px;}
+.pic_show li{ float:left; margin:5px;}
+
+.artist{ width:960px; height:200px; margin:auto;}
+
+
+
+/*----------  页脚设置  -----------------*/
+.foot{ width:960px; height:80px;margin:auto; margin-top:20px;border-top:3px solid #900; background:#000;color:#fff; }
+.foot{ font-size:14px;text-align:center; line-height:36px; }
+
+        .uul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+		.uul a{font-size:16px; color:#fff; line-height:36px; font-weight:bold; font-family:微软雅黑;
+		text-decoration: none;  width: 84px;}
+        /* 为每个链接设定样式 */
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* 鼠标放置链接时改变样式 */
+        .dropbtn:hover
+        {
+            background-color: #111;
+            color: red;
+        }
+
+        .dropdown {
+            display: inline-block;
+
+        }       
+
+        /* 下拉菜单设置样式 */
+        .dropdown-content {
+            /* 隐藏菜单 */
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            /* 设置链接元素的最小宽度 */
+            min-width: 84px;
+            box-shadow: 0px 8px 16px 0px rgba(12, 12, 12, 0.2);
+            overflow: auto;
+			z-index: 1;
+        }
+        .dropdown-content a {
+            display: block;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;  
+        }
+
+        .dropdown-content a:hover {
+            background-color: hotpink;
+          
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+		
+		input[type="text"], input[type="password"], textarea, select {
+		     width: 100%;
+		     padding: 8px;
+		     box-sizing: border-box;
+		}
+		input[type="submit"], input[type="reset"] {
+		     width: 48%;
+		     padding: 10px;
+		     margin-top: 10px;
+		}
+		input[type="submit"] {
+		            
+		     background-color: #4CAF50;
+		     color: white;
+		     border: none;
+			cursor: pointer;
+		}
+		input[type="reset"] {
+		     float: right;
+		     background-color: #f44336;
+		     color: white;
+		     border: none;
+			 cursor: pointer;
+		}
+ .form-container {
+            width: 300px; /* 根据需要调整宽度 */
+            margin: 20px auto; /* 居中form */
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 100%; /* 让输入框占满整个宽度 */
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        /* 新增的样式，使登录按钮居中 */
+        .form-group input[type="button"] {
+            width: auto; /* 使按钮宽度适应内容 */
+            margin: 0 auto; /* 居中按钮 */
+            display: block; /* 使按钮成为块级元素 */
+        }
+
+        /* 可以自定义按钮样式 */
+        .form-group input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-group input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+
+
+
+ 
